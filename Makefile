@@ -6,6 +6,6 @@ build: clean
 	exec docker run --rm -i --user="1000:1000" --net=none -v "${PWD}":/data "blang/latex:ubuntu" "pdflatex" "references.tex"
 
 clean:
-	rm resume.aux && rm resume.log && rm resume.pdf && \
-	rm references.aux && rm references.log && rm references.pdf
+	rm -f resume.aux && rm -f resume.log && rm -f resume.pdf && \
+	rm -f references.aux && rm -f references.log && rm -f references.pdf
 
